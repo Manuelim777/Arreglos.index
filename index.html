@@ -1,0 +1,22 @@
+<html>
+<script>
+    document.write("Primer intento" + "<br>")
+    let colores = ["Rojo-", "Azul-", "Verde-"];
+     document.write("colores originales:" + colores + "<br>")
+     console.log("longitud de colores:" + colores.length);
+    let primero = colores[0];
+    document.write("Primer color:" + primero + "<br>");
+    colores.forEach(function (elemento, indice, array) {
+        console.log("Color:" + elemento, "Posicion:" + indice);});
+    let nuevaLongitud = colores.push("Amarillo-", "Cafe-");
+    colores.forEach(function (elemento,indice,array) {
+        console.log(elemento,indice);});
+    let ultimo = colores.pop();
+    let nuevaLongitud2 = colores.push("Naranja-", "Morado-", "Negro-", "Blanco-");
+    colores.forEach(function (elemento,indice,array) {
+    console.log("Nuevos colores:" + colores)
+        document.write(elemento,indice + "<br>");});
+
+</script>
+    
+</html>
